@@ -3,7 +3,7 @@ describe 'forms' do
     it 'login'do  
     
     
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
     
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'jarvis!'
@@ -22,7 +22,7 @@ describe 'forms' do
     
        it 'senha errada' do
     
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
     
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'aaa!'
@@ -33,7 +33,7 @@ describe 'forms' do
     
         it 'usuario nao cadastrado' do
     
-            visit 'https://training-wheels-protocol.herokuapp.com/login'
+            visit '/login'
     
             fill_in 'username', with: 'aaaaaaa'
             fill_in 'password', with: 'aaa!'

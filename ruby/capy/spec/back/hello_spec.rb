@@ -3,7 +3,7 @@ describe 'primeiro script' do
 
     it 'visitar pagina' do
 
-        visit 'https://training-wheels-protocol.herokuapp.com/'
+        visit '/'
 
         expect(page.title).to eql'Training Wheels Protocol'
 

@@ -3,7 +3,7 @@ describe 'forms' do
     it 'login'do  
     
     
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/login'
     
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'jarvis!'
@@ -22,18 +22,18 @@ describe 'forms' do
     
        it 'senha errada' do
     
-        visit 'https://training-wheels-protocol.herokuapp.com/login'
+        visit '/Login'
     
         fill_in 'username', with: 'stark'
         fill_in 'password', with: 'aaa!'
-        click_button 'Login'
+        click_button 'login'
         expect(find('#flash').text).to include 'Senha é invalida!'
     
         end
     
         it 'usuario nao cadastrado' do
     
-            visit 'https://training-wheels-protocol.herokuapp.com/login'
+            visit '/login'
     
             fill_in 'username', with: 'aaaaaaa'
             fill_in 'password', with: 'aaa!'

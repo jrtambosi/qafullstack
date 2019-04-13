@@ -2,7 +2,7 @@ describe 'Alernando janelas' , :janela do
 
     before(:each) do
 
-        visit'https://training-wheels-protocol.herokuapp.com/windows'
+        visit'/windows'
     end
 
     it 'Nova Janela'  do
