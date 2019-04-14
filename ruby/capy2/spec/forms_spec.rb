@@ -1,4 +1,4 @@
-describe 'forms' do
+describe 'forms', :loginform do
 
     it 'login'do  
     

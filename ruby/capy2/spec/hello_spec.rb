@@ -7,8 +7,7 @@ describe ' primeiro script', :heloo do
 
     visit '/'
 
-    
-    
+   
     end
 
 
