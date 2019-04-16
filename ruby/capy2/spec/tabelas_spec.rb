@@ -30,7 +30,7 @@ describe ' Tabelas' , :tabis, :smoke do
 
             movie = diesel.all('td')[2].text
 
-            expect(movie).to eql 'Velozes e Furiosos'
+            expect(movie).to eql 've e Furiosos'
     
     end
 
